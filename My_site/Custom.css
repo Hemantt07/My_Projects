@@ -17,9 +17,11 @@ a{
 
 
 .container .row .text{
-	padding: 10px 30px;
+	padding: 0px 30px;
 	font-family: 'right-gothic';
 	font-size: 20px;
+	color: #323232;
+	margin: auto 0;
 }
 
 .container{
@@ -190,9 +192,9 @@ ul.sub-menu{
 	padding: 0 10px;
 }
 ul.sub-menu li a {
-	font-size: 15px!important;
-	font-weight: 400!important;
-	padding: 5px 0!important;
+    font-size: 23px!important;
+    font-weight: 400!important;
+    padding: 3px 23px!important;
 }
 
 ul.sub-menu li{
