@@ -1,11 +1,11 @@
 div.symbol{
 	text-align: center;
-	font-size: 35px;
+	font-size: 250%;
 	border-radius: 10px;
-	background-color: black;
+	background-color: #747272;
 	color: white;
 	cursor: pointer;
-	height: 70px;
+	height: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -39,5 +39,5 @@ div.calc{
 	border: 5px solid black;
 	margin-top: 20px;
 	border-radius: 20px;
-	background-color: lightgrey;
+	background-color: #3a3636;
 }

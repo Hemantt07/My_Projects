@@ -1,6 +1,15 @@
 $(document).ready(function(){
 
-	$(".symbol").click(function(){
+	$(".symbol").click(function calculate(){
+
+
+		$(document).on('keypress',function(e) {
+		    if(e.which == 13) {
+		        var math = $("#output").val();
+					var res = eval(math);
+					$("#output").val(res);
+		    }
+		});
 
 		var input = $(this).text()
 		var val = $("#output").val();
@@ -33,6 +42,8 @@ $(document).ready(function(){
 	});
 
 });
+
+
 
 function setCharAt(str,index,chr) {
     if(index > str.length-1) return str;
