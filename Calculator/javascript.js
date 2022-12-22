@@ -2,6 +2,7 @@ $(document).ready(function(){
 
 	$(".symbol").click(function calculate(){
 
+		var input = $(this).text() 
 
 		$(document).on('keypress',function(e) {
 		    if(e.which == 13) {
@@ -11,7 +12,6 @@ $(document).ready(function(){
 		    }
 		});
 
-		var input = $(this).text()
 		var val = $("#output").val();
 
 		if ( input == "AC" ) {
@@ -32,10 +32,32 @@ $(document).ready(function(){
 			id = setCharAt( id, ind,'');
 			$("#output").val( id );
 
+		} else if( input == "." ) {
+
+			var id = $("#output").val();
+			if ( id.includes(".") ){
+
+			} else{
+				var newVal = val + input;
+				$("#output").val( newVal );
+			}
+
 		} else {
 
-			var newVal = val + input;
-			$("#output").val( newVal );
+			if( input == "/" || "+" || "-" || "%" || "*" || "%" ) {
+				
+				var id = $("#output").val();
+				var last = id.substr(id.length - 1);
+
+				if ( last == "/" || last == "*" || last == "+" || last == "-" || last == "/"   ){
+					
+				} else {
+					
+					var newVal = val + input;
+					$("#output").val( newVal );
+				}
+
+			}
 
 		}
 

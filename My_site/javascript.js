@@ -46,21 +46,6 @@ $(document).ready(function(){
 
 	});
 
-	// window.addEventListener("scroll", function (event) {
-	// 	var scroll = window.scrollY;
-	// 	console.log(scroll);
-	// 	var scrollH = document.body.scrollHeight - window.innerHeight;
-	// 	var scrollW = $(window).width();
-
-	// 	console.log(scrollH);
-
-	// 	var a  = (scroll / scrollH) * 100;
-
-	// 	var n = 100 - a;
-	// 	$( ".border-left" ).css( "right", n+"%");
-	// });
-
-// crousel
 
 $('.owl-carousel').owlCarousel({
 	    loop:true,
@@ -76,3 +61,9 @@ $('.owl-carousel').owlCarousel({
 	        }
 	    }
 });
+var myModal = document.getElementById('myModal')
+var myInput = document.getElementById('myInput')
+
+myModal.addEventListener('shown.bs.modal', function () {
+  myInput.focus()
+})
