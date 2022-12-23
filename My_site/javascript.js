@@ -67,3 +67,40 @@ var myInput = document.getElementById('myInput')
 myModal.addEventListener('shown.bs.modal', function () {
   myInput.focus()
 })
+
+function validateForm() {
+  var name =  document.getElementById('name').value;
+  var email =  document.getElementById('email').value;
+  var subject =  document.getElementById('subject').value;
+  var message =  document.getElementById('message').value;
+
+  if (name == "") {
+      document.querySelector('.status1').innerHTML = "Name cannot be empty";
+  } else {
+  	  document.querySelector('.status1').innerHTML ="";
+  }
+
+  if (email == "") {
+      document.querySelector('.status2').innerHTML = "Email cannot be empty";
+  } else {
+      var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+      if(!re.test(email)){
+          document.querySelector('.status2').innerHTML = "Email format invalid";
+      } else {
+      		document.querySelector('.status2').innerHTML = "";
+      }
+  }
+
+  if (subject == "") {
+      document.querySelector('.status3').innerHTML = "Subject cannot be empty";
+  } else {
+  		document.querySelector('.status3').innerHTML = "";
+  }
+
+  if (message == "") {
+      document.querySelector('.status4').innerHTML = "Message cannot be empty";
+  } else {
+  		document.querySelector('.status4').innerHTML = "";
+  }
+ 
+}

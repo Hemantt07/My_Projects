@@ -60,7 +60,7 @@
 					</li>
 					<li><a href="blog.html" class="cool-link">Blogs</a></li>
 					<li><a href="about.html" class="cool-link">About</a></li>
-					<li><a href="contact.html" class="cool-link">Contact</a></li>
+					<li><a href="" class="cool-link">Contact</a></li>
 					<li>
 						<ul type="none" class="head-social-menu">
 							<li><a target="__blank" href="https://youtube.com/channel/UCqXTYzn34IXt8Er0WgcIsaw">
@@ -85,108 +85,78 @@
 		</div>
 </div>
 
-<div class="container-fluid">
-	<div class="col-12">
-		<div class="owl-carousel owl-theme">
-		    <div class="item">
-		    	<div class="image">
-		    		<img class="img-fluid" src="Images\pexels-david-bartus-235359.jpg">
-		    		<div class="text_on_img col-6">
-		    			<i>"Of all the books in the world, the best stories are found between the pages of a passport."</i>
-		    		</div>
-		    	</div>
-		    </div>
-		    <div class="item">
-		    	<div class="image">
-		    		<img class="img-fluid" src="Images\pexels-kelly-3030268.jpg">
-		    		<div class="text_on_img col-6">
-		    			<i>"Go. Fly. Roam. Travel. Voyage. Explore. Journey. Discover. Adventure."</i>
-		    		</div>
-		    	</div>
-		    </div>
-		    <div class="item">
-		    	<div class="image">
-		    	<img class="img-fluid" src="Images\pexels-simon-berger-931881.jpg">
-		    		<div class="text_on_img col-6">
-		    			<i>"Wherever you go, go with all your heart."</i>
-		    		</div>
-		    	</div>
-		    </div>
-		</div>
-	</div> 	
-</div>	
-
-<div class="container image_with_text">
-	<div class="row left-content my-5">
-		<div class="col-md-5 col-12">
-			<img class="img-fluid d-block mx-auto" src="Images\first.jpeg">
-		</div>
-		<div class="col-md-7 col-12 text">
-			<h1>Title</h1>
-			<p> 
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-			</p>
-		</div>
-	</div>
-	<div class="row right-content my-5">
-		<div class="col-md-7 col-12 text">
-			<h1>Title</h1>
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-		</div>
-		<div class="col-md-5 col-12">
-			<img class="img-fluid d-block mx-auto" src="Images\second.jpeg">
-		</div>
-	</div>
-</div>	
-
-<div class="container collage">
+<div class="container">
+	<h1 class="title">Contact</h1>
 	<div class="row">
-		<div class="title">Collage</div>
-		<div class="col-md-3 col-6" data-bs-toggle="modal" data-bs-target="#exampleModal1">
-			<div class="coll_image">
-				<img class="img-fluid d-block mx-auto" src="Images\pexels-photo-3685271.webp">
-				<div class="description">
+		<section class="mb-4">
+		    <p class="w-responsive mb-5">Do you have any questions? Please do not hesitate to contact me directly. I will come back to you within
+		        a matter of hours to help you.</p>
 
-				</div>
-			</div>
-		</div>
-		<div class="col-md-3 col-6" data-bs-toggle="modal" data-bs-target="#exampleModal2">
-			<div class="coll_image">
-				<img class="img-fluid d-block mx-auto" src="Images\cat.webp">
-				<div class="description">
-					
-				</div>				
-			</div>
-		</div>
-		<div class="col-md-3 col-6" data-bs-toggle="modal" data-bs-target="#exampleModal3">
-			<div class="coll_image">
-				<img class="img-fluid d-block mx-auto" src="Images\pexels-photo-1322543.webp">
-				<div class="description">
-					
-				</div>				
-			</div>
-		</div>
-		<div class="col-md-3 col-6" data-bs-toggle="modal" data-bs-target="#exampleModal4">
-			<div class="coll_image">
-				<img class="img-fluid d-block mx-auto" src="Images\pexels-photo-1122411.jpeg">
-				<div class="description">
-					
-				</div>				
-			</div>
-		</div>
+		    <div class="row">
+
+		        <div class="col-md-9 mb-md-0 mb-5">
+		            <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+
+		                <div class="row mt-3">
+
+		                    <div class="col-md-6">
+		                        <div class="md-form mb-0">
+		                            <label for="name" class="">Your name</label>
+		                            <input type="text" id="name" name="name" class="form-control">
+		             				<div class="status1 text-danger"></div>
+		                        </div>
+		                    </div>
+
+		                    <div class="col-md-6">
+		                        <div class="md-form mb-0">
+		                            <label for="email" class="">Your email</label>
+		                            <input type="text" id="email" name="email" class="form-control">
+		                            <div class="status2 text-danger"></div>
+		                        </div>
+		                    </div>
+
+		                </div>
+
+		                <div class="row mt-3">
+		                    <div class="col-md-12">
+		                        <div class="md-form mb-0">
+		                            <label for="subject" class="">Subject</label>
+		                            <input type="text" id="subject" name="subject" class="form-control">
+		                            <div class="status3 text-danger"></div>
+		                        </div>
+		                    </div>
+		                </div>
+
+		                <div class="row mt-3">
+
+		                    <div class="col-md-12">
+
+		                        <div class="md-form">
+		                            <label for="message">Your message</label>
+		                            <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+		                            <div class="status4 text-danger"></div>
+		                        </div>
+
+		                    </div>
+		                </div>
+
+		            </form>
+
+		            <div class="text-center text-md-left mt-3">
+		                <a class="btn btn-secondary" onclick="validateForm();">SUBMIT</a>
+		                <div class="status5 text-success"></div>
+		            </div>
+		        </div>
+
+		        <div class="col-md-3 mb-md-0 mb-5" >
+					<img class="img-fluid d-block mx-auto rounded" style="height: 242px; overflow: hidden;" src="Images\contact.jpg">
+		        </div>
+
+		    </div>
+
+		</section>
 	</div>
 </div>
-
 
 <footer>
 	<div class="container-fluid mt-5">
@@ -209,7 +179,7 @@
 					<li><a href="">Hobbies</a></li>
 					<li><a href="blog.html">Blogs</a></li>
 					<li><a href="about.html">About</a></li>
-					<li><a href="contact.html">Contact</a></li>
+					<li><a href="">Contact</a></li>
 				</ul>
 			</div>
 			<div class="col-6 col-md-3 mt-5">
@@ -235,49 +205,6 @@
 		</div>
 	</div>
 </footer>
-
-<!-- modal -->
-<div class="modal fade" id="exampleModal1" aria-hidden="true">
-  <div class="modal-dialog">
-  	<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-    <div class="modal-content">
-      <div class="modal-body">
-			<img class="img-fluid d-block mx-auto" src="Images\pexels-photo-3685271.webp">
-      </div>
-    </div>
-  </div>
-</div>
-<div class="modal fade" id="exampleModal2" aria-hidden="true">
-  <div class="modal-dialog">
-  	<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-    <div class="modal-content">
-      <div class="modal-body">
-			<img class="img-fluid d-block mx-auto" src="Images\cat.webp">
-      </div>
-    </div>
-  </div>
-</div>
-<div class="modal fade" id="exampleModal3" aria-hidden="true">
-  <div class="modal-dialog">
-  	<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-    <div class="modal-content">
-      <div class="modal-body">
-			<img class="img-fluid d-block mx-auto" src="Images\pexels-photo-1322543.webp">
-      </div>
-    </div>
-  </div>
-</div>
-<div class="modal fade" id="exampleModal4" aria-hidden="true">
-  <div class="modal-dialog">
-  	<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-    <div class="modal-content">
-      <div class="modal-body">
-			<img class="img-fluid d-block mx-auto" src="Images\pexels-photo-1122411.jpeg">
-      </div>
-    </div>
-  </div>
-</div>
-
 <!-- script -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
