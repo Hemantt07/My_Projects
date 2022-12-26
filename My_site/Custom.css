@@ -413,6 +413,38 @@ footer .foot-tite{
     top: 1%;
 }
 
+.contact-page section .form {
+    background: linear-gradient(45deg, #707070 -50%, #383838 55%);
+    color: white;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 0 25px 1px grey;
+}
+
+.contact-page section .form .btn{
+	color: white;
+    background-color: #163248;
+    width: 200px;
+    font-size: 20px;
+    transition: all .8s;
+    font-weight: 800;
+}
+
+.contact-page section .form .btn:hover{
+	color: #163248;
+    background-color: white;
+}
+
+.contact-page section img {
+    box-shadow: 0 0 25px 1px grey;
+}
+
+/*bootstrap*/
+.form-control:focus{
+	border-color: rgb(50 65 86);
+	box-shadow:0 0 13px 0.3rem rgb(255 255 255 / 20%);
+}
+
 /*blogs*/
 
 .main-blogs{
@@ -527,16 +559,12 @@ footer .foot-tite{
 .about-page div div .skill .interest-list li p{
 	list-style: none;
 	padding-left: 10px;
-	padding: 9px 22px 0;
+	padding: 9px 32px 0;
 	color: grey;
 	text-decoration: none;
 }
 
-/*bootstrap*/
-.form-control:focus{
-	border-color: rgb(50 65 86);
-	box-shadow: 0 0 0 0.25rem rgb(50 65 86 / 15%);
-}
+
 
 @media (max-width: 767px){
 
@@ -614,5 +642,18 @@ footer .foot-tite{
 		background-color: white;
 		width: 100%;
 		padding: 0 10px;
+	}
+
+	p{
+		font-size: .75rem;
+		line-height: 1.2em;
+	}
+
+	.title{
+		font-size: 30px;
+	}
+
+	.about-page div div .skill .skill-list li h3{
+	    font-size: 12px;
 	}
 }
