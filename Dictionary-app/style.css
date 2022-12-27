@@ -13,7 +13,7 @@ body{
 	justify-content: center;
 	align-items: center;
 	min-height: 100vh;
-	background-color: #3c8df159!important;
+	background-color: #ce77f759!important;
 }
 
 ::selection {
@@ -25,7 +25,7 @@ body{
 	width: 420px;
 	border-radius: 17px;
 	background: #fff;
-	box-shadow: 0 0 10px 0 grey;
+	box-shadow: 0 0 10px 0 #c956cf78;
 	padding: 25px 28px 45px;
 }
 
