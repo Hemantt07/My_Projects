@@ -1,0 +1,19 @@
+{
+    "name": "as/custom-plugin",
+    "description": "A custom plugin file",
+    "type": "project",
+    "license": "GPL",
+    "autoload": {
+        "psr-4": {
+            "As\\CustomPlugin\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Hemant Dhiman",
+            "email": "reshavdhiman67@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
