@@ -1,0 +1,39 @@
+a.nav-link {
+    margin: 8px 8px;
+    border-radius: 10px;
+    background-color: transparent;
+    color: white!important;
+    padding: 9px;
+}
+
+a.nav-link.active{
+    background-color: #262434;
+    color: white!important;
+}
+
+a.nav-link:hover{
+    background-color: #5c5b63;
+    color: white!important;
+}
+
+.navbar{
+    background-color: #393c46;
+    padding: 0!important;
+}
+.navbar-nav{
+    width: 60%;
+    justify-content: space-around;
+
+}
+
+table{
+    border: 2px solid grey;
+}
+th,td{
+    text-align: center;
+}
+td a{
+    color: inherit;
+    text-decoration: none;
+}
+
